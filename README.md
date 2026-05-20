@@ -6,6 +6,8 @@ This repository contains Embedded C programs, bit manipulation techniques, point
 
 The goal of this repository is to strengthen low-level programming skills and build a strong foundation in Embedded Systems and Firmware Development.
 
+---
+
 # 📚 Topics Covered
 
 - C Programming Fundamentals
@@ -23,3 +25,21 @@ The goal of this repository is to strengthen low-level programming skills and bu
 - Microcontroller Programming
 - Register-Level Programming
 
+---
+
+# 🛠 Repository Structure
+
+```bash
+Embedded-C/
+│
+├── Bitwise/
+├── Pointers/
+├── Arrays/
+├── Memory/
+├── Structures/
+├── UART/
+├── SPI/
+├── I2C/
+├── RTOS/
+├── MiniProjects/
+└── README.md
