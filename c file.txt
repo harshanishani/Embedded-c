@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdint.h>
+
+int main()
+{
+    uint32_t num = 0x1234abcd;
+
+    num = ((num & 0xAAAAAAAA) >> 1) | ((num & 0x55555555) << 1);     // Swap adjacent bits
+
+    num = ((num & 0xAAAAAAAA) >> 1) | ((num & 0x55555555) << 1);     // Swap adjacent bits
+
+    num = ((num & 0xF0F0F0F0) >> 4) | ((num & 0x0F0F0F0F) << 4);     // Swap nibbles (4 bits)
+
+    num = ((num & 0xFF00FF00) >> 8) | ((num & 0x00FF00FF) << 8);     // Swap bytes
+
+    num = (num >> 16) | (num << 16);      // Swap 16-bit halves
+
+
+    printf("Reversed bits: 0x%08X\n", num);
+
+    return 0;
+}
